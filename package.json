@@ -1,0 +1,17 @@
+{
+  "name": "discord_webhook",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/webhook.js",
+  "scripts": {
+    "dev": "node --watch src/webhook.js",
+    "start": "node src/webhook.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
