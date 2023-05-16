@@ -6,7 +6,9 @@
   "main": "src/webhook.js",
   "scripts": {
     "dev": "node --watch src/webhook.js",
-    "start": "node src/webhook.js"
+    "start": "node src/webhook.js",
+    "develop:dev": "node --watch src/development",
+    "develop:start": "node src/development"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +16,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "ping": "^0.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.5"
   }
 }
