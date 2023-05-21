@@ -6,11 +6,12 @@
   "main": "src/webhook.js",
   "scripts": {
     "dev": "node --watch src/webhook.js",
-    "start": "node src/webhook.js"
+    "start": "node src/webhook_netcat.js",
+    "test:unit": "node src/webhook_netcat.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "ping": "^0.4.4"
