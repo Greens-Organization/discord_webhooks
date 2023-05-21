@@ -23,7 +23,8 @@ const fetch_config = {
 nc(hostname, port, (results) => {
   const ticker = async function () {
     console.log("[WARN] SERVIDOR ATIVO");
-    if (results[0] === "ERROR") {
+    const status = results[0];
+    if (status === "ERROR") {
       clearInterval(netcat);
       fetch(webhook, fetch_config)
         .then((res) => {
